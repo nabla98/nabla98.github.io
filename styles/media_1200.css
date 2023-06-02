@@ -1,0 +1,327 @@
+/*Seccion 1: Contiene la foto principal, los 3 titulos y la barra con los iconos*/
+.sect1 {
+	width:100vw;
+	height:100vh;
+	padding-top:30vh;
+}
+.foto_perfil {
+	width:25vh;
+}
+.title {
+	margin-top:2.7vh;
+	line-height:8.5vh;
+	font-size:6.5vh;
+}
+.segunda_foto {
+	height:30vw;
+	width:25.8333vw;
+	margin-left:0vw;
+}
+.cajita {
+	width:80vh;
+	height:10vh;
+	margin-left:calc(50% - 40vh);
+	margin-top:3.5vh;
+}
+.icons {
+	width:10vh;
+	height:10vh;
+	margin:1.65vh;
+	margin-top:0vh;
+}
+.icon {
+	width:10vh;
+	height:10vh;
+}
+svg {
+	width:7vh;
+	height:7vh;
+}
+
+/*Seccion 2 : Contiene la foto secundaria y la descripcion con mis datos*/
+
+.sect2 {
+	width:100vw;
+	height:32vw;
+	padding:1vw;
+}
+.sect21 {
+	float:left;
+	height:30vw;
+	width:10vw;	
+}
+.sect22 {
+	float:right;
+	width:calc(100vw - 28.8333vw);
+	height:30vw;
+	padding:1vw;
+}
+.lista2 {
+	float:left;
+	margin-left:1.5vw;
+}
+
+.lista1 {
+	float:right;
+	margin-right:1.5vw;
+}
+li {
+	text-justify:justify;
+	margin-top:1.2vw;
+	font-size: 1.4vw;
+}
+.about_me {
+	text-align:center;
+	font-size:3.5vw;
+}
+.descripcion {
+	margin-top:1vw;
+	text-justify:justify;
+	font-size:2vw;
+	margin-left:2vw;
+}
+
+/*Seccion 3 : Contiene las cartas con los cursos y capacitaciones que realicé*/
+
+.sect3 {
+	width:100vw;
+	height:130vw;
+	padding:1vw;
+}
+.curso {
+	float:left;
+	width:40vw;
+	height:55vw;
+	margin-top:4vw;
+	margin-left:4.5vw;
+	margin-right:4.5vw;
+}
+.titulo_cursito {
+	font-size:2.5vw;
+	margin-top:3vw;
+}
+.dato_cursito {
+	margin-top:2vw;
+	font-size:1.9vw;
+}
+.fecha_cursito {
+	margin-top:1.8vw;
+	font-size:1.5vw;
+}
+.descripcion_cursito {
+	margin-top:0.5vw;
+	font-size:1.8vw;
+	padding:1vw;
+}
+.certificado_python {
+	width:90%;
+	height:auto;
+	margin-top:13vw;
+}
+.certificado_r {
+	width:90%;
+	height:auto;
+	margin-top:13vw;
+}
+.certificado_web {
+	width:90%;
+	height:auto;
+	margin-top:13vw;
+}
+.certificado_db {
+	width:90%;
+	height:25.5vw;
+	margin-top:13.1vw;
+}
+
+/*Seccion 4 : Contiene los iconos de los lenguajes y tecnologias que manejo*/
+
+.sect4 {
+	width:100vw;
+	height:47vw;
+	padding:1vw;
+}
+.tecnologias {
+	float:bottom;
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+.lenguaje {
+	float:left;
+	width:11vw;
+	height:11vw;
+	margin-top:5vw;
+	margin-left:4.5vw;
+	margin-right:4vw;
+}
+.tecnologia {
+	margin-top:2vw;
+	margin-bottom:0.5vw;
+	font-size:3vw;
+	text-align:center;
+}
+.imgtech {
+	width:11vw;
+}
+
+/*Seccion 5 : Contiene las cartas con Educacion y Experiencia*/
+
+.sect5 {
+	width:100vw;
+	height:150vw;
+	padding:0px;
+}
+.titu_seccion_5 {
+	font-size:3vw;
+	padding:1.5vw;
+	margin:1.5vw;
+}
+.Educacion {
+	width:44%;
+	height:63vw;
+	float:left;
+	margin-left:3.7vw;
+}
+.carta1 {
+	width:100%;
+	height:40vw;
+	margin-top:5vw;
+	margin-bottom:5vw;
+}
+.lado {
+	width:100%;
+	height:100%;
+}
+.Experiencia {
+	width:44%;
+	height:63vw;
+	float:right;
+	margin-right:3.7vw;
+}
+.accion {
+	font-size:2.5vw;
+	text-align:center;
+	margin-top:8vw;
+	padding:1vw;
+}
+.lugar {
+	font-size:2.2vw;
+	text-align:center;
+	padding:1vw;
+}
+.fecha {
+	font-size:2vw;
+	text-align:center;
+	padding-bottom:10vw;
+}
+.tareas {
+	font-size:1.8vw;
+	padding:1vw;
+	text-align:center;
+	padding-left:2vw;
+	padding-right:2vw;
+}
+#space1 {
+	padding-top:1.6vw;
+
+}
+#space2 {
+	padding-top:5.5vw;
+	font-size:2.2vw;
+}
+
+
+/*Seccion 6 : Contiene los proyectos realizados*/
+
+.proyecto {
+	font-size:2.5vw;
+	padding-top:3vw;
+	padding-bottom:3vw;
+}
+.sect6 {
+	width:100vw;
+	height:45vw;
+	padding:3vw;	
+}
+
+/*Seccion 7 : Contiene el cuadro conel formulario de contacto*/
+
+.sect7 {
+	width:100vw;
+	height:525px;
+	padding:10px;	
+}
+.contacto {
+	font-size:30px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.border_seccion7 {
+	float:bottom;
+	width:100%;
+	height:100%;
+}
+#name {
+	font-size:15px;
+	height:30px;
+	width:331.018px;
+	float:left;
+	margin-left:calc(50% - 357.5px);
+	margin-top:20px;
+	margin-bottom:15px;
+	padding:5px;
+}
+#email {
+	font-size:15px;
+	height:30px;
+	width:331.018px;
+	float:left;
+	margin-left:52px;
+	margin-top:20px;
+	margin-bottom:15px;
+	padding:5px;
+}
+#subject {
+	font-size:15px;
+	height:30px;
+	width:715px;
+	float:left;
+	margin-left:calc(50% - 357.5px);
+	margin-top:15px;
+	margin-bottom:15px;
+	padding:5px;
+}
+#messaje {
+	font-size:15px;
+	height:200px;
+	width:715px;
+	float:left;
+	margin-left:calc(50% - 357.5px);
+	margin-top:15px;
+	margin-bottom:15px;
+	padding:5px;
+}
+.special1 {
+	font-size:15px;
+	height:50px;
+	width:132.5px;
+	float:left;
+	margin-left:calc(48% - 132.5px);
+	margin-right:2%;
+	margin-top:15px;
+	margin-bottom:15px;
+	padding:5px;	
+}
+.special2 {
+	font-size:15px;
+	height:50px;
+	width:132.5px;
+	float:left;
+	border-radius:5px;
+	position:center;
+	margin-left:2%;
+	margin-top:15px;
+	margin-bottom:15px;
+	padding:5px;	
+}

@@ -1,0 +1,458 @@
+/* Seccion 1: Contiene la foto principal, los 3 titulos y la barra con los iconos*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.sect1 {
+	background-image:url(https://c.wallhere.com/photos/97/8c/abstract_Ae_Plexus-630175.jpg!d);
+	background-attachment: fixed;
+	background-position:center;
+	background-size: cover;
+}
+.foto_perfil {
+	display:block;
+	margin:auto;
+	border-radius:100%;
+	border-style:solid;
+	border-color:white;
+	border-width:1px;
+}
+.segunda_foto {
+	border-style:solid;
+	border-color:#00dcdc;
+	border-width:2px;
+}
+.title {
+	color: white;
+	text-align:center;
+	font-family:'Lato', sans-serif;	
+}
+.title-content {
+	display: block;
+	opacity: 0;
+	animation: revealText 2s forwards;	
+}
+.title-second {
+	animation-delay: 1s;
+}
+.title-third {
+	animation-delay: 2s;	
+}
+@keyframes revealText {
+	from {
+		transform: translateY(20px);		
+	}
+	to {
+		opacity:1;
+		transform: none;		
+	}	
+}
+
+.cajita {
+}
+.icons {
+	float:left;
+}
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property:outline-offset, outline-color, background-color;
+	transition-duration: .25s;
+}
+.icon:hover {
+	outline-offset: 4px;	
+}
+icon:hover i{
+	animation: shake .25s;
+}
+.icon--instagram:hover {
+	float:left;
+	background-image:
+	radial-gradient(circle at 30% 107%,
+	#fdf497 0%, #fdf497 5%,
+	#fd5949 45%, #d6249f 60%,
+	#285AEB 90%);
+	outline-color: #a02d76;	
+}
+.icon--twitter:hover {
+	background-color: #1da1f2;
+	outline-color: #1da1f2;	
+}
+.icon--linkedin:hover {
+	background-color:#0038b5;
+	outline-color:#0038b5;
+}
+.icon--github:hover {
+	background-color:#2ea44f;
+	outline-color:#2ea44f;	
+}
+.icon--codepen:hover {
+	background-color:black;
+	outline-color:white;	
+}
+.icon--spotify:hover {
+	background-color:black;
+	outline-color:#2ea44f;	
+}
+
+@keyframes shake {
+	10%(transform: rotate(15deg);)
+	20%(transform: rotate(-15deg);)
+	30%(transform: rotate(15deg);)
+	40%(transform: rotate(-15deg);)	
+	50%(transform: rotate(15deg);)
+}
+
+/*Seccion 2 : Contiene la foto secundaria y la descripcion con mis datos*/
+
+.sect2 {
+	background-color:black;
+}
+.contenedor2 {
+	background-color:black;
+}
+.sect21 {
+	background-color:black;
+}
+.sect22 {
+	background-color:black;
+	background-position:center;
+	background-size: cover;
+	border-width:2px;
+	border-style:solid;
+	border-color:#00dcdc;
+	font-family:'Poppins',sans-serif;
+}
+
+li {
+	font-weight:bold;
+	color:white;
+}
+.about_me {
+	text-align:center;
+	color:white;
+	font-family:'Poppins', sans-serif;	
+}
+.descripcion {
+	font-weight:bold;
+	text-justify:justify;
+	color:white;
+	font-family:'Poppins', sans-serif;	
+}
+
+/*Seccion 3 : Contiene las cartas con los cursos y capacitaciones que realicé*/ 
+
+.sect3 {
+	background-image:url(https://c.wallhere.com/photos/97/8c/abstract_Ae_Plexus-630175.jpg!d);
+	background-attachment: fixed;
+	background-position:center;
+	background-size: cover;
+	font-family:'Lato',sans-serif;
+}
+.curso {
+	color:white;
+	background-image:url(https://c.wallhere.com/photos/97/8c/abstract_Ae_Plexus-630175.jpg!d);
+	background-attachment: fixed;
+	background-position:center;
+	background-size: cover;
+	text-justify:justfy;
+	-webkit-perspective: 2000;
+	text-align:center;
+}
+.carta {
+	width:100%;
+	height:100%;
+	position:relative;
+	transform-style: preserve-3d;
+	transition:1s;
+}
+.carta:hover {
+	transform: rotateY(180deg);
+}
+
+.side {
+	width:100%;
+	height:100%;
+	backface-visibility: hidden;
+	position:absolute;
+}
+.front {
+	background: linear-gradient(to right, black, #494bc7, #00aeaa);
+	background-size: 400% 400%;
+	animation: animate-background 10s infinite ease-in-out;	
+}
+.back {	
+	background: linear-gradient(to right, black, #494bc7, #00aeaa);
+	background-size: 400% 400%;
+	animation: animate-background 10s infinite ease-in-out;	
+	transform: rotateY(180deg);
+}
+@keyframes animate-background {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+.titulo_cursito {
+	font-weight:bold;
+	color:white;
+}
+.dato_cursito {
+	font-weight:bold;
+	color:white;
+}
+.fecha_cursito {
+	color:white;
+}
+.descripcion_cursito {
+	font-weight:bold;
+	color:white;
+}
+.certificado_python {
+	border-style:solid;
+	border-width:3px;
+	border-color:black;
+}
+.certificado_r {
+	border-style:solid;
+	border-width:3px;
+	border-color:black;
+}
+.certificado_web {
+	border-style:solid;
+	border-width:3px;
+	border-color:black;
+	background-color:white;
+}
+.certificado_db {
+	border-style:solid;
+	border-width:3px;
+	border-color:black;
+	background-color:white;
+}
+
+/*Seccion 4 : Contiene los iconos de los lenguajes y tecnologias que manejo*/
+
+.sect4 {
+	background-color:black;
+}
+.tecnologias {
+	float:bottom;
+	background-color:black;
+	text-align:center;
+	color:white;
+	border-style:solid;
+	border-color:#00dcdc;
+	border-width:2px;
+	font-family:'Rubik',sans-serif;
+}
+.lenguaje {
+	float:left;
+	background-color:black;
+}
+.tecnologia {
+	color:white;
+	text-align:center;
+	font-family:'Lato',sans-serif;
+}
+
+/*Seccion 5 : Contiene las cartas con Educacion y Experiencia*/
+
+.sect5 {
+	background-image:url(https://c.wallhere.com/photos/97/8c/abstract_Ae_Plexus-630175.jpg!d);
+	background-attachment: fixed;
+	background-position:center;
+	background-size: cover;
+	font-family:'Lato',sans-serif;
+}
+.titu_seccion_5 {
+	color:white;
+	text-align:center;
+	font-family:'Lato',sans-serif;
+}
+.Educacion {
+	color:white;
+	background-image:url(https://c.wallhere.com/photos/97/8c/abstract_Ae_Plexus-630175.jpg!d);
+	background-attachment: fixed;
+	background-position:center;
+	background-size: cover;
+	text-justify:justfy;
+	-webkit-perspective: 2600;
+}
+.carta1 {
+/*	width:100%;*/
+/*	height:100%;*/
+	position:relative;
+	transform-style: preserve-3d;
+	transition:1s;
+/*	margin-top:50px;*/
+/*	margin-bottom:100px;*/
+}
+.carta1:hover {
+	transform: rotateY(180deg);
+}
+.lado {
+/*	width:100%;*/
+/*	height:100%;*/
+	backface-visibility: hidden;
+	position:absolute;
+}
+.frente1 {
+	background: linear-gradient(to right, black, #494bc7, #00aeaa);
+	background-size: 400% 400%;
+	animation: animate-background 10s infinite ease-in-out;	
+}
+.atras1 {
+	background: linear-gradient(to right, black, #494bc7, #00aeaa);
+	background-size: 400% 400%;
+	animation: animate-background 10s infinite ease-in-out;	
+	transform: rotateY(180deg);
+}
+.Experiencia {
+	color:white;
+	background-image:url(https://c.wallhere.com/photos/97/8c/abstract_Ae_Plexus-630175.jpg!d);
+	background-attachment: fixed;
+	background-position:center;
+	background-size: cover;
+	text-justify:justify;
+	-webkit-perspective: 2600;
+}
+.accion {
+	text-align:center;
+	color:white;
+}
+.lugar {
+	text-align:center;
+	color:white;
+}
+.fecha {
+	text-align:center;
+	color:white;
+}
+.tareas {
+	font-weight:bold;
+	color:white;
+	text-align:center;
+}
+
+/*Seccion6 : Contiene los proyectos realizados*/
+
+.sect6{
+	background-image:url(https://c.wallhere.com/photos/97/8c/abstract_Ae_Plexus-630175.jpg!d);
+	background-attachment: fixed;
+	background-position:center;
+	background-size: cover;	
+}
+.proyecto {
+	text-align:center;
+	color:white;
+	font-family:'Lato',sans-serif;
+}
+
+/*Seccion 7 : Contiene el cuadro conel formulario de contacto*/
+
+.sect7 {
+	background-color:black;	
+}
+.contacto {
+	text-align:center;
+	color:white;
+	font-family:'Lato',sans-serif;
+}
+.border_seccion7 {
+	float:bottom;
+	border-style:solid;
+	border-color:#00dcdc;
+	border-width:2px;
+}
+#name {
+	color:white;
+	font-family:'Lato',sans-serif;
+	border-radius:5px;
+	border-color:white;
+	border-style:solid;
+	background-color:black;
+}
+#email {
+	font-family:'Lato',sans-serif;
+	color:white;
+	float:left;
+	border-radius:5px;
+	border-color:white;
+	border-style:solid;
+	background-color:black;
+}
+#subject {
+	font-family:'Lato',sans-serif;
+	color:white;
+	float:left;
+	border-radius:5px;
+	border-color:white;
+	border-style:solid;
+	background-color:black;
+}
+#messaje {
+	font-family:'Lato',sans-serif;
+	color:white;
+	float:left;
+	border-radius:5px;
+	border-color:white;
+	border-style:solid;
+	border-width:2px;
+	background-color:black;
+}
+.special1 {
+	font-family:'Lato',sans-serif;
+	text-align:center;
+	color:white;
+	float:left;
+	border-radius:5px;
+	background-color:#006dd0;	
+	position:center;
+}
+.special1:hover {
+	background-color:#0055d0;
+}
+.special2 {
+	font-family:'Lato',sans-serif;
+	text-align:center;
+	color:white;
+	float:left;
+	border-radius:5px;
+	position:center;
+	background-color:#006dd0;	
+}
+.special2:hover {
+	background-color:#0055d0;
+}
+.sect8 {
+	background-color:black;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
